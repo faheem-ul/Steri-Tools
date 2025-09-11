@@ -8,11 +8,11 @@ import bg from "@/public/images/home/whynow-bg.png";
 
 const WhyNowSection = () => {
   return (
-    <div className="relative w-full bg-[#14205A] mx-auto mt-[75px]">
+    <div className="relative w-full bg-[#14205A] mx-auto mt-[65px] md:mt-[75px]">
       <Image
         src={bg}
         alt="image"
-        className="absolute w-full h-full min-h-[689px]"
+        className="absolute object-cover w-full h-full min-h-[689px]"
       />
       <div className="w-full h-full homegradient absolute"></div>
 
@@ -20,13 +20,13 @@ const WhyNowSection = () => {
         {/* Title */}
         <Text
           as="h2"
-          className="text-[36px] font-semibold text-[#EDD98A] pt-[103px] mb-[100px] md:text-left text-center"
+          className="text-[#EDD98A] pt-[49px] md:pt-[103px] mb-[42px] md:mb-[100px] md:text-left text-center"
         >
           Why now?
         </Text>
 
         {/* Stats Row*/}
-        <div className="flex flex-col md:flex-row justify-between items-start gap-[50] text-white mb-[32px]">
+        <div className="flex flex-col md:flex-row justify-between items-start gap-[50] text-white mb-[61px] md:mb-[32px]">
           {/* Stat 1 */}
           <div className="md:max-w-[291px] w-full flex flex-col items-center text-center">
             <span>
@@ -43,13 +43,13 @@ const WhyNowSection = () => {
                 />
               </svg>
             </span>
-            <Text className="font-bold mt-[10px]">
+            <Text className="font-bold mt-[10px] text-[18px] leading-[26px]">
               50 million surgeries are performed annually in the U.S
             </Text>
           </div>
 
           {/* Stat 2 */}
-          <div className="md:max-w-[291px] w-full flex flex-col items-center text-center">
+          <div className="md:max-w-[242px] w-full flex flex-col items-center text-center">
             <span>
               <svg
                 width="25"
@@ -67,11 +67,13 @@ const WhyNowSection = () => {
                 />
               </svg>
             </span>
-            <Text className="font-bold mt-[10px]">313 million globally</Text>
+            <Text className="font-bold mt-[10px] text-[18px] leading-[26px]">
+              313 million globally
+            </Text>
           </div>
 
           {/* Stat 3 */}
-          <div className="md:max-w-[291px] w-full flex flex-col items-center text-center">
+          <div className="md:max-w-[295px] w-full flex flex-col items-center text-center">
             <span>
               <svg
                 width="24"
@@ -86,14 +88,14 @@ const WhyNowSection = () => {
                 />
               </svg>
             </span>
-            <Text className="font-bold mt-[10px]">
+            <Text className="font-bold mt-[10px] text-[18px] leading-[26px]">
               SSIs cost the U.S. healthcare system over $3.5 Billion each year,
               $8 Billion Globally.
             </Text>
           </div>
 
           {/* Stat 4 */}
-          <div className="md:max-w-[291px] w-full flex flex-col items-center text-center">
+          <div className="md:max-w-[359px] w-full flex flex-col items-center text-center">
             <span>
               <svg
                 width="25"
@@ -108,7 +110,7 @@ const WhyNowSection = () => {
                 />
               </svg>
             </span>
-            <Text className="font-bold mt-[10px]">
+            <Text className="font-bold mt-[10px] text-[18px] leading-[26px]">
               SSIs contribute to an estimated 10,000 deaths annually in the
               U.S., and over 230,000 worldwide....And that’s just mortality.
             </Text>
@@ -129,7 +131,7 @@ const WhyNowSection = () => {
         </div>
 
         {/* CTA Button */}
-        <div className="mt-[50px] pb-[94px]">
+        <div className="mt-[50px] pb-[66px] md:pb-[94px]">
           <Button className="px-6 py-3 w-[186px]  mx-auto">Learn More</Button>
         </div>
       </div>
