@@ -7,13 +7,26 @@ import surgicalinstruments from "@/public/images/home/instruments.png";
 import dotbg from "@/public/images/home/Dot Grid.svg";
 import surgical2 from "@/public/images/home/surgical2.png";
 import data from "@/public/images/home/data.png";
+import germsBg from "@/public/images/home/germs-bg.svg";
+import yellowDotSquare from "@/public/images/home/yellow-dot-square.svg";
+import blueDotSquare from "@/public/images/home/blue-dot-square.svg";
+import blueDotGrid from "@/public/images/home/blue-dots-grid.svg";
 
 const SurgicalInstruments = () => {
   return (
-    <div className="w-full max-w-[1237px] px-5 mx-auto ">
-      <div className="w-full flex justify-center md:flex-row flex-col md:gap-[55px] gap-[20px] items-start mb-[37px]">
-        <div className="w-full max-w-[789px]">
-          <Text as="h2" className="mb-[64px]">
+    <div className="relative w-full max-w-[1237px]  mx-auto px-5">
+      {/* Rings BG */}
+      <Image
+        src={germsBg}
+        alt="image"
+        className="absolute z-0 object-contain pointer-events-none left-[55px] top-[0px] hidden lg:block"
+      />
+      <div className="w-full flex justify-center flex-col-reverse  md:flex-row  md:gap-[55px] gap-[0] items-center md:items-start mb-[50px] md:mb-[37px]">
+        <div className="z-10 w-full max-w-[789px] text-center md:text-left">
+          <Text
+            as="h2"
+            className="mb-[42px] md:mb-[64px] pt-[86px] md:pt-[98px]"
+          >
             Surgical instruments get dirty, SteriBasin Go{" "}
             <span className="text-[#EDD98A]">
               {" "}
@@ -21,7 +34,7 @@ const SurgicalInstruments = () => {
             </span>{" "}
             in real time during surgery.
           </Text>
-          <Text>
+          <Text className="font-montserrat tracking-[-0.2%] text-[18px] md:text-[22px] leading-[24px] md:leading-[28px] font-semibold">
             <span className="text-[#EDD98A]"> SteriBasin Go: </span> Built
             Rugged for Combat. Scales for Civilian Use.
           </Text>
@@ -29,22 +42,31 @@ const SurgicalInstruments = () => {
         <Image
           src={surgicalinstruments}
           alt="image"
-          className="w-full max-w-[356px]"
+          className="w-full max-w-[396px]"
         />
       </div>
 
       {/* 2 */}
 
-      <div className="flex relative items-center gap-[10px] md:flex-now-wrap flex-col md:flex-row">
+      <div className="flex relative items-center gap-[15px] md:gap-[10px] md:flex-now-wrap flex-col md:flex-row">
         <div className="relative h-full  flex justify-center items-center">
-          <Image src={dotbg} alt="dotbg" className="absolute w-full h-full " />
+          <Image
+            src={dotbg}
+            alt="dotbg"
+            className="absolute w-full h-full hidden md:block"
+          />
+          <Image
+            src={yellowDotSquare}
+            alt="dotbg"
+            className="absolute top-[-8px] md:top-[75px] left-0"
+          />
           <Image
             src={surgical2}
             alt=""
-            className="w-full max-w-[590px] relative z-10"
+            className="w-full max-w-[608px] relative z-10"
           />
         </div>
-        <Text className="w-full max-w-[615px]">
+        <Text className="w-full max-w-[615px] ]">
           Every surgeon knows the pattern: blood-stained instruments set on the
           back table, dropped into splash basins, reused mid-case without
           real-time disinfection.
@@ -70,9 +92,14 @@ const SurgicalInstruments = () => {
       <div className="flex relative items-center flex-col gap-[10px]  md:flex-row-reverse">
         <div className="relative h-full min-h-[407px] w-full max-w-[590px] flex justify-center items-center">
           <Image
-            src={dotbg}
+            src={blueDotSquare}
+            alt="blue"
+            className="absolute bottom-[11px] right-0"
+          />
+          <Image
+            src={blueDotGrid}
             alt="dotbg"
-            className="absolute inset-0 w-full h-full -z-10"
+            className="absolute inset-0 w-full h-full -z-10 hidden md:block"
           />
           <Image
             src={data}
@@ -80,7 +107,7 @@ const SurgicalInstruments = () => {
             className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-[530px] h-[210px] z-10"
           />
         </div>
-        <Text className="w-full max-w-[608px] mt-[-30px] md:mt-0">
+        <Text className="w-full max-w-[608px] mt-[31px] md:mt-0">
           SteriBasin Go is a compact, table-based disinfection device delivering{" "}
           {`>6-log`} bacterial reduction in under 15 seconds—without disrupting
           surgical flow.

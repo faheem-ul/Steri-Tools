@@ -12,13 +12,13 @@ import info2 from "@/public/images/story/info2.png";
 const StoryInfo = () => {
   return (
     <div className="w-full max-w-[1237px] px-5 mx-auto ">
-      <div className="w-full flex flex-col md:flex-row md:items-center items-start gap-[30px] md:mb-[104px] mb-[70px]">
-        <div>
-          <Image src={shapes} alt="shapes" className="w-[135px] h-[135px]" />
+      <div className="w-full flex flex-col md:flex-row md:items-center items-start gap-[37px] md:gap-[30px] md:mb-[104px] mb-[47px]">
+        <div className="relative w-full max-w-[502px]">
+          <Image src={info1} alt="info1" className="w-full" />
           <Image
-            src={info1}
-            alt="info1"
-            className="w-full max-w-[502px] mt-[-30px]"
+            src={shapes}
+            alt="shapes"
+            className="absolute -z-1 top-[-60px] md:top-[-80px] left-0 md:w-[135px] md:h-[135px] w-[102px]"
           />
         </div>
 
@@ -55,13 +55,13 @@ const StoryInfo = () => {
         </div>
       </div>
 
-      <div className="w-full flex flex-col-reverse md:flex-row-reverse md:items-center items-start gap-[30px] md:mb-[104px] mb-[70px]">
-        <div>
-          <Image src={info2} alt="info1" className="w-full max-w-[502px] " />
+      <div className="w-full flex flex-col md:flex-row-reverse md:items-center items-start gap-[132px] md:gap-[30px] md:mb-[175px] mb-[70px]">
+        <div className="relative w-full max-w-[502px]">
+          <Image src={info2} alt="info2" className="w-full" />
           <Image
             src={yellowshapes}
             alt="shapes"
-            className="w-[135px] h-[135px] mt-[-30px] relative -z-10 ml-auto"
+            className="absolute -z-1 bottom-[-65px] md:bottom-[-75px] right-[17px] md:w-[135px] md:h-[135px] w-[107px]"
           />
         </div>
 
@@ -92,14 +92,15 @@ const StoryInfo = () => {
         </div>
       </div>
 
-      <Text className="font-monoserrat text-center text-[22px] leading-[28px] font-bold mb-[60px]">
-        We invite you to explore our site and learn more about how SteriTools is
-        setting new standards in surgical practices and offering hope and safety
-        to patients worldwide. Join us in our mission to transform
-        healthcare—one surgery at a time
+      <Text className="font-montserrat md:tracking-[-0.2%] mx-auto w-full md:max-w-[1030px] text-center text-[18px] md:text-[22px] md:leading-[28px] mb-[72px] md:mb-[64px]">
+        We invite you to explore our site and learn more about how{" "}
+        <span className="text-[#EDD98A] font-bold">SteriTools </span> is setting
+        new standards in surgical practices and offering hope and safety to
+        patients worldwide. Join us in our mission to transform healthcare—one
+        surgery at a time
       </Text>
 
-      <Button className="text-white bg-[#14205A] max-w-[260px] h-[60px] border-2 border-[#EDD98A] mb-[107px] mx-auto ">
+      <Button className="text-white bg-[#076F26] max-w-[290px] h-[60px] border-2 border-[#EDD98A] mb-[101px] md:mb-[107px] mx-auto ">
         Invest in SteriTools
       </Button>
     </div>

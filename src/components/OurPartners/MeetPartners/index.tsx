@@ -8,6 +8,8 @@ import Button from "@/ui/Button";
 
 import eee from "@/public/images/partners/eee.svg";
 import hjf from "@/public/images/partners/hjf.svg";
+import yellowDoubleRing from "@/public/images/partners/single-yellow-double-ring.svg";
+import blueYellowRing from "@/public/images/partners/single-yellow-blue-ring.svg";
 
 const MeetPatrtners = () => {
   const [showContent, setShowContent] = useState(false);
@@ -16,8 +18,18 @@ const MeetPatrtners = () => {
       <Text as="h2" className="mb-[85px] text-center">
         Meet Our <span className="text-[#EDD98A]"> Partners </span>
       </Text>
-      <div className="w-full bg-[#14205A] rounded-[24px] mb-[103px]">
-        <div className="w-full max-w-[987px] mx-auto flex justify-between items-center">
+      <div className="relative w-full bg-[#14205A] rounded-[24px] mb-[103px]">
+        {/* Yellow Rings BG */}
+        <Image
+          src={yellowDoubleRing}
+          alt="Rings Background"
+          className="
+           pointer-events-none object-contain
+           mx-auto max-w-[60px] pt-[20px]            /* mobile: center */
+           md:absolute md:left-[29px] md:top-[20px] md:max-w-[75.96px]  /* desktop: positioned */
+          "
+        />
+        <div className="w-full max-w-[987px] mx-auto flex justify-between items-center z-10">
           <div className="flex gap-[49px] items-center py-[30px] md:flex-row flex-col">
             <Image src={eee} alt="eee" />
             <Image src={hjf} alt="hjf" />
@@ -65,6 +77,16 @@ const MeetPatrtners = () => {
             {showContent ? "Read Less" : "Read More"}
           </Button>
         </div>
+        {/* BlueYellow Rings BG */}
+        <Image
+          src={blueYellowRing}
+          alt="Rings Background"
+          className="
+          pointer-events-none object-contain
+          mx-auto max-w-[60px] pb-[22px]                   /* mobile: centered */
+          md:absolute md:left-[38.37px] md:bottom-[22px] md:max-w-[56.56px]  /* desktop: positioned */
+          "
+        />
       </div>
     </div>
   );

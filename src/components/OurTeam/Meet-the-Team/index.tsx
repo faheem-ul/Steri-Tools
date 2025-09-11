@@ -15,6 +15,7 @@ import leighTeamMember from "@/public/images/team/Leigh Bierdeman.png";
 import chrisTeamMember from "@/public/images/team/Chris Wylie.png";
 import navLeft from "@/public/images/team/ArrowCircleLeft.svg";
 import navRight from "@/public/images/team/ArrowCircleRight.svg";
+import ringsBg from "@/public/images/team/cirular-rings.svg";
 
 const teamMembers = [
   {
@@ -89,7 +90,13 @@ export default function TeamSlider() {
           {/* Team slides */}
           {teamMembers.map((member, index) => (
             <SwiperSlide key={index}>
-              <div className="md:min-h-[554px] py-5 md:py-0 bg-[#14205A] text-white rounded-3xl md:p-[21px] md:pr-0 flex flex-col md:flex-row justify-end items-center gap-10 md:gap-[110px] border-t-[3px] border-t-[#EDD98A]">
+              <div className="relative md:min-h-[554px] py-5 md:py-0 bg-[#14205A] text-white rounded-3xl md:p-[21px] md:pr-0 flex flex-col md:flex-row justify-end items-center gap-10 md:gap-[110px] border-t-[3px] border-t-[#EDD98A]">
+                {/* Rings BG */}
+                <Image
+                  src={ringsBg}
+                  alt="Rings Background"
+                  className="absolute object-contain pointer-events-none left-[45px] top-[24px] hidden lg:block"
+                />
                 <div className="flex-shrink-0 w-full max-w-[300px]">
                   <Image
                     src={member.image}
