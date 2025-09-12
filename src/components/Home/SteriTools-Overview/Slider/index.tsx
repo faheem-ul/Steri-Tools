@@ -74,12 +74,12 @@ const SurgicalInstrumentsSlider = () => {
         ))}
       </Swiper>
       {/* Navigation buttons below slider */}
-      <div className="mt-4 flex items-center justify-center gap-4">
+      <div className="mt-[50px] md:mt-[30px] flex items-center justify-center gap-4">
         <button aria-label="Previous" className="nav-team-left p-1">
-          <Image src={navLeft} alt="Previous slide" width={32} height={32} />
+          <Image src={navLeft} alt="Previous slide" width={42} height={42} />
         </button>
         <button aria-label="Next" className="nav-team-right p-1">
-          <Image src={navRight} alt="Next slide" width={32} height={32} />
+          <Image src={navRight} alt="Next slide" width={42} height={42} />
         </button>
       </div>
     </div>
