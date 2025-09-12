@@ -6,6 +6,7 @@ import Text from "@/ui/Text";
 
 import deviceImg from "@/public/images/investor/invester-portal-device.png";
 import yellowRing from "@/public/images/investor/yellow-double-ring.svg";
+import blueRing from "@/public/images/investor/blue-single-ring.svg";
 
 const PartnerAccess = () => {
   return (
@@ -34,13 +35,19 @@ const PartnerAccess = () => {
         Click the button below to access the protected Google Drive folder
       </Text>
 
-      <Image
-        src={deviceImg}
-        alt="image"
-        className="w-full max-w-[382px] mx-auto"
-      />
+      <div className="relative flex justify-center items-center w-full max-w-[382px] mx-auto">
+        {/* Blue Ring  */}
+        <Image
+          src={blueRing}
+          alt="Blue Ring"
+          className="absolute w-[600px] h-[600px] z-0"
+        />
 
-      <Button className="text-white bg-[#14205A] max-w-[260px] h-[60px] border-2 border-[#EDD98A] mt-[90px] mx-auto cursor-pointer">
+        {/* Device Image */}
+        <Image src={deviceImg} alt="Device" className="relative z-10 w-full" />
+      </div>
+
+      <Button className="text-white bg-[#076F26] max-w-[260px] h-[60px] border-2 border-[#EDD98A] mt-[90px] mx-auto cursor-pointer">
         Access the Folder
       </Button>
 
