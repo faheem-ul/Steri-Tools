@@ -98,7 +98,7 @@ const AdvisorySlider = () => {
           {/* Advsiory slides */}
           {advisoryMembers.map((member, index) => (
             <SwiperSlide key={index}>
-              <div className="relative md:min-h-[554px] py-5 md:py-0 bg-[#14205A] text-white rounded-3xl md:p-[21px] md:pr-0 flex flex-col md:flex-row justify-end items-center gap-10 md:gap-[110px] border-t-[3px] border-t-[#EDD98A]">
+              <div className="relative md:min-h-[554px] py-5 md:py-0 bg-[#14205A] text-white rounded-3xl md:p-[21px] md:pr-0 flex flex-col md:flex-row justify-end items-center gap-10 md:gap-[94px] border-t-[3px] border-t-[#EDD98A]">
                 {/* Rings BG */}
                 <Image
                   src={ringsBg}

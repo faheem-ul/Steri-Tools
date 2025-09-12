@@ -90,7 +90,7 @@ export default function TeamSlider() {
           {/* Team slides */}
           {teamMembers.map((member, index) => (
             <SwiperSlide key={index}>
-              <div className="relative md:min-h-[554px] py-5 md:py-0 bg-[#14205A] text-white rounded-3xl md:p-[21px] md:pr-0 flex flex-col md:flex-row justify-end items-center gap-10 md:gap-[110px] border-t-[3px] border-t-[#EDD98A]">
+              <div className="relative md:min-h-[554px] py-5 md:py-0 bg-[#14205A] text-white rounded-3xl md:p-[21px] md:pr-0 flex flex-col md:flex-row justify-end items-center gap-10 md:gap-[94px] border-t-[3px] border-t-[#EDD98A]">
                 {/* Rings BG */}
                 <Image
                   src={ringsBg}
@@ -128,7 +128,7 @@ export default function TeamSlider() {
       </div>
 
       {/* Partner Button */}
-      <Button className="text-white bg-[#14205A] max-w-[290px] h-[60px] border-2 border-[#EDD98A] mb-[67px] mx-auto ">
+      <Button className="text-white bg-[#076F26] max-w-[290px] h-[60px] border-2 border-[#EDD98A] mb-[67px] mx-auto ">
         Partner with Us
       </Button>
     </div>
